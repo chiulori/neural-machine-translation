@@ -10,13 +10,13 @@ The [article](https://arxiv.org/abs/1409.0473) mentions that neural machine tran
 * Encodes the input sentence to a fixed-length vector
   * Defines vector *c* by combining the sequence of input vectors, *h*, a hidden state at time *t*
 
-<p align="center"><img width="133" alt="Screen Shot 2022-03-21 at 7 13 52 PM" src="https://user-images.githubusercontent.com/19938311/159383103-facca493-ce33-4121-81c1-f0a8d5c943a3.png">
+<p align="center"><img width="300" alt="Screen Shot 2022-03-21 at 7 13 52 PM" src="https://user-images.githubusercontent.com/19938311/159383103-facca493-ce33-4121-81c1-f0a8d5c943a3.png">
 
 * Decodes fixed-length vector into translated variable-length output
   * Defines the probability of *y* by decomposing joint probability into ordered conditionals
   * Prediction is based on the vector *c* and previously predicted words
 
-<p align="center"><img width="202" alt="Screen Shot 2022-03-21 at 7 16 03 PM" src="https://user-images.githubusercontent.com/19938311/159383300-6880d18b-3936-4ce7-8336-07daeda5f2e5.png">
+<p align="center"><img width="300" alt="Screen Shot 2022-03-21 at 7 16 03 PM" src="https://user-images.githubusercontent.com/19938311/159383300-6880d18b-3936-4ce7-8336-07daeda5f2e5.png">
 
 ## What is the proposed method?
 
@@ -24,7 +24,7 @@ The [article](https://arxiv.org/abs/1409.0473) mentions that neural machine tran
 * Bidirectional RNN encoder and decoder that searches the input in order to decode a translation
   * Concatenation of the forward and backward hidden states allow for the algorithm to account for annotations of the preceding and following words of the source
 
-<p align="center"><img width="169" alt="Screen Shot 2022-03-21 at 7 19 31 PM" src="https://user-images.githubusercontent.com/19938311/159383566-c9eacf35-94c2-412b-9c20-ef95e4c641ef.png">
+<p align="center"><img width="300" alt="Screen Shot 2022-03-21 at 7 19 31 PM" src="https://user-images.githubusercontent.com/19938311/159383566-c9eacf35-94c2-412b-9c20-ef95e4c641ef.png">
   
 * Context vector *c<sub>i</sub>* consists of annotations *h<sub>i</sub>* that have information on the whole input with emphasis surrounding each word at the *i*th position
 * Conditional probability is defined based on the context vector *c<sub>i</sub>* for each target word at the *i*th position, *y<sub>i</sub>*
@@ -37,7 +37,7 @@ The [article](https://arxiv.org/abs/1409.0473) mentions that neural machine tran
   * Corpus contained 348M words
 * Trained models with sentences up to 30 words and up to 50 words
   
-<p align="center"><img width="357" alt="Screen Shot 2022-03-21 at 7 42 55 PM" src="https://user-images.githubusercontent.com/19938311/159385432-4a16a808-89e5-4e8d-afcf-34a948f27dcb.png">
+<p align="center"><img width="600" alt="Screen Shot 2022-03-21 at 7 42 55 PM" src="https://user-images.githubusercontent.com/19938311/159385432-4a16a808-89e5-4e8d-afcf-34a948f27dcb.png">
   
 * Result: RNNsearch-50 performed the best
   
