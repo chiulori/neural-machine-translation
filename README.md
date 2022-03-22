@@ -45,13 +45,15 @@ The [article](https://arxiv.org/abs/1409.0473) mentions that neural machine tran
 
 * Experimented only on English-to-French translation. The authors do not discuss translation of other text sources or other languages
 * This approach requires computation of the annotation weight for each word which would limit the applicability to other tasks and could be costly
-* There is still the challenge of handling unknown words
   
 ## Discussion Topic 1
 Besides sentence length, what are other limitations of the RNN encoder-decoder approach?
   
 ## Discussion Topic 2
 According to the figure showing performance of each of the models, RNNsearch-50 which performed the best actually has the lowest BLEU score at sentence length 0, why is that?
+ 
+## Discussion Topic 3
+What are some challenges with the RNNsearch model?
   
 ## Other Resources
 * [Attention Mechanism](https://machine-learning-note.readthedocs.io/en/latest/attention.html)
