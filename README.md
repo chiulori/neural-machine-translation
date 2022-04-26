@@ -64,5 +64,6 @@ What are some challenges with the RNNsearch model?
 * [On the Properties of Neural Machine Translation: Encoder-Decoder Approaches](https://arxiv.org/abs/1409.1259)
 
 ## Video Presentation
-* To be added
+* Video Recording can be found [here](https://www.youtube.com/watch?v=A62bEN41TLs)
+
 
